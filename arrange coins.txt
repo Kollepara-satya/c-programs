@@ -1,0 +1,13 @@
+//leet code for arranging coins
+
+int arrangeCoins(int n){
+    int k=1;
+    while(k<=n)
+    {
+        n=n-k;
+        k++;
+    }
+    k=k-1;
+    return k;
+
+}
