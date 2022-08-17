@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+{
+    int a[100],i,n;
+    int sum=0,k;
+    printf("enter array size");
+    scanf("%d",&n);
+    printf("enter consecutive elements into array starting from 1:\n");
+    for(i=0;i<n-1;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    int s=n*(n+1)/2;
+    for(i=0;i<n;i++)
+    {
+        sum=sum+a[i];
+    }
+    k=s-sum;
+    printf("missing number is %d",k);
+    return 0;
+}
