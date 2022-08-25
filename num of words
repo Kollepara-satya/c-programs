@@ -1,0 +1,16 @@
+#include <stdio.h>
+void main()
+{
+    char str[100];
+    int i,count=0,len;
+    printf("enter a string:\t");
+    scanf("%[^\n]s",str);
+    for(i=0;str[i]!='\0';i++);
+    len=i;
+    for(i=len;i>=0;i--)
+    {
+       if(str[i]==' '||str[i]=='\0')
+       count++;
+    }
+    printf("%d",count);
+}
