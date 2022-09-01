@@ -1,0 +1,20 @@
+#include <stdio.h>
+int function(int x);
+void main()
+{
+    int x,ans;
+    printf("Enter a number:");
+    scanf("%d",&x);
+    ans=function(x);
+     if(ans==0)
+     printf("\nEven");
+     else
+     printf("\nOdd");
+}
+int function(int x)
+{
+    if(x%2==0)
+     return 0;
+    else
+     return 1;
+}
