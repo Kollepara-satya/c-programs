@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+void towers(int ,char ,char ,char );
+int main()           
+{
+    int num;
+    char S='A',T='B',D='C';
+    scanf("%d",&num);
+    towers(num,S,T,D);
+    return 0;
+}
+void towers(int num,char S,char T,char D)
+{
+    if(num>=1&&num<=10)
+  {
+    if(num==1)
+    {
+        printf("Moving ring 1 from %c to %c\n",S,T);
+        return;
+    }
+        towers(num-1,S,D,T);
+         printf("Moving ring %d from %c to %c\n",num,S,T);
+         towers(num-1,D,T,S);
+  }     
+    
+}
